@@ -16,18 +16,6 @@ general:
 
   # blocks - the blocks listed below will have custom values instead of the default.
 blocks:
-  ACACIA_DOOR:
-    score: 20.0
-  ACACIA_FENCE:
-    score: 17.5
-    diminishingReturns: 5000
-  ACACIA_FENCE_GATE:
-    score: 40.0
-    diminishingReturns: 100
-  ACACIA_STAIRS:
-    score: 15.0
-  ACACIA_TRAPDOOR:
-    score: 30.0
   ACACIA_WOOD:
     additionalBlocks:
       - STRIPPED_ACACIA_WOOD
@@ -54,30 +42,16 @@ blocks:
     negativeReturns: 15
   BEDROCK:
     score: 0.0
-  BIRCH_DOOR:
-    score: 20.0
-  BIRCH_FENCE:
-    score: 17.5
-    diminishingReturns: 5000
-  BIRCH_FENCE_GATE:
-    score: 40.0
-    diminishingReturns: 100
-  BIRCH_STAIRS:
-    score: 15.0
-  BIRCH_TRAPDOOR:
-    score: 30.0
   BIRCH_WOOD:
     additionalBlocks:
       - STRIPPED_BIRCH_WOOD
     diminishingReturns: 10000
-  BIRCH_WOOD_STAIRS:
-    score: 15.0
   BOOKSHELF:
     score: 50.0
   BREWING_STAND:
     score: 30.0
     limit: 10
-  BRICK:
+  BRICKS:
     score: 50.0
   BRICK_SLAB:
     score: 25.0
@@ -89,7 +63,7 @@ blocks:
     diminishingReturns: 100
   CACTUS:
     score: 0.0
-  CAKE_BLOCK:
+  CAKE:
     score: 50.0
   CARPET:
     score: 20.0
@@ -121,23 +95,14 @@ blocks:
   COBBLESTONE_STAIRS:
     score: 15.0
     diminishingReturns: 5000
-  COBBLE_WALL:
+  COBBLESTONE_WALL:
     diminishingReturns: 5000
   COCOA:
     score: 0.0
-  COMMAND:
-    score: 0.0
-  CREEPER_HEAD:
+  COMMAND_BLOCK:
     additionalBlocks:
-      - CREEPER_HEAD
-    score: 1000.0
-  CRIMSON_DOOR:
-    score: 20.0
-  CRIMSON_STAIRS:
-    score: 15.0
-  CRIMSON_TRAPDOOR:
-    score: 30.0
-  CROPS:
+      - REPEATING_COMMAND_BLOCK
+      - CHAIN_COMMAND_BLOCK
     score: 0.0
   CUT_RED_SANDSTONE:
     score: 25.0
@@ -149,18 +114,8 @@ blocks:
   CUT_SANDSTONE_SLAB:
     score: 40.0
     diminishingReturns: 10000
-  DARK_OAK_DOOR:
-    score: 20.0
-  DARK_OAK_FENCE:
-    score: 17.5
-    diminishingReturns: 5000
-  DARK_OAK_FENCE_GATE:
-    score: 40.0
+  DANDELION:
     diminishingReturns: 100
-  DARK_OAK_STAIRS:
-    score: 15.0
-  DARK_OAK_TRAPDOOR:
-    score: 30.0
   DARK_OAK_WOOD:
     additionalBlocks:
       - STRIPPED_DARK_OAK_WOOD
@@ -170,8 +125,6 @@ blocks:
   DARK_PRISMARINE_SLAB:
     score: 25.0
   DAYLIGHT_DETECTOR:
-    score: 200.0
-  DAYLIGHT_DETECTOR_INVERTED:
     score: 200.0
   DETECTOR_RAIL:
     score: 20.0
@@ -192,28 +145,26 @@ blocks:
     score: 1000.0
   EMERALD_ORE:
     score: 200.0
-  ENCHANTMENT_TABLE:
+  ENCHANTING_TABLE:
     score: 150.0
   ENDER_CHEST:
     score: 2000.0
     limit: 3
-  ENDER_PORTAL:
+  END_PORTAL:
     score: 0.0
-  ENDER_PORTAL_FRAME:
+  END_PORTAL_FRAME:
     score: 0.0
-  ENDER_STONE:
+  END_STONE:
     score: 15.0
     limit: 10000
-  FENCE:
-    score: 17.5
-    diminishingReturns: 5000
-  FENCE_GATE:
-    score: 40.0
-    diminishingReturns: 100
   FIRE:
+    additionalBlocks:
+      - SOUL_FIRE
     score: 0.0
   GLASS:
     score: 50.0
+  GLASS_PANE:
+    score: 20.0
   GLOWSTONE:
     score: 20.0
   GOLD_BLOCK:
@@ -224,7 +175,7 @@ blocks:
   GRANITE:
     score: 12.5
     diminishingReturns: 10000
-  GRASS:
+  GRASS_BLOCK:
     score: 20.0
     diminishingReturns: 10000
   GRAVEL:
@@ -237,10 +188,10 @@ blocks:
     score: 125.0
     limit: 10
     negativeReturns: 5
-  HUGE_MUSHROOM_1:
+  BROWN_MUSHROOM_BLOCK:
     score: 100.0
     diminishingReturns: 30
-  HUGE_MUSHROOM_2:
+  RED_MUSHROOM_BLOCK:
     score: 100.0
     diminishingReturns: 30
   ICE:
@@ -260,24 +211,10 @@ blocks:
     score: 20.0
   JUKEBOX:
     score: 50.0
-  JUNGLE_DOOR:
-    score: 20.0
-  JUNGLE_FENCE:
-    score: 17.5
-    diminishingReturns: 5000
-  JUNGLE_FENCE_GATE:
-    score: 40.0
-    diminishingReturns: 100
-  JUNGLE_STAIRS:
-    score: 15.0
-  JUNGLE_TRAPDOOR:
-    score: 30.0
   JUNGLE_WOOD:
     additionalBlocks:
       - STRIPPED_JUNGLE_WOOD
     diminishingReturns: 10000
-  JUNGLE_WOOD_STAIRS:
-    score: 15.0
   LADDER:
     score: 0.0
   LAPIS_BLOCK:
@@ -288,23 +225,15 @@ blocks:
     score: 0.0
   LIGHT_WEIGHTED_PRESSURE_PLATE:
     score: 115.0
-  LOG/0-5:
-    additionalBlocks:
-    - LOG_2
-    diminishingReturns: 100
-  LOG_2:
-    diminishingReturns: 100
-  LOG_2/1:
-    diminishingReturns: 100
   LONG_GRASS:
     diminishingReturns: 100
-  MELON_BLOCK:
+  MELON:
     score: 0.0
   MELON_STEM:
     score: 0.0
   MOSSY_COBBLESTONE:
     score: 30.0
-  MYCEL:
+  MYCELIUM:
     score: 20.0
     diminishingReturns: 10000
   NETHERRACK:
@@ -321,13 +250,40 @@ blocks:
   NETHER_BRICK_STAIRS:
     score: 30.0
     diminishingReturns: 5000
-  NETHER_FENCE:
-    score: 60.0
-    diminishingReturns: 5000
   NOTE_BLOCK:
     score: 20.0
   OAK_DOOR:
+    additionalBlocks:
+    - SPRUCE_DOOR
+    - BIRCH_DOOR
+    - JUNGLE_DOOR
+    - ACACIA_DOOR
+    - DARK_OAK_DOOR
+    - CRIMSON_DOOR
+    - WARPED_DOOR
     score: 20.0
+  OAK_FENCE:
+    additionalBlocks:
+    - SPRUCE_FENCE
+    - BIRCH_FENCE
+    - JUNGLE_FENCE
+    - ACACIA_FENCE
+    - DARK_OAK_FENCE
+    - CRIMSON_FENCE
+    - WARPED_FENCE
+    score: 17.5
+    diminishingReturns: 5000
+  OAK_FENCE_GATE:
+    additionalBlocks:
+    - SPRUCE_FENCE_GATE
+    - BIRCH_FENCE_GATE
+    - JUNGLE_FENCE_GATE
+    - ACACIA_FENCE_GATE
+    - DARK_OAK_FENCE_GATE
+    - CRIMSON_FENCE_GATE
+    - WARPED_FENCE_GATE
+    score: 40.0
+    diminishingReturns: 100
   OAK_LEAVES:
     additionalBlocks:
     - ACACIA_LEAVES
@@ -392,8 +348,24 @@ blocks:
     score: 5.0
     diminishingReturns: 15000
   OAK_STAIRS:
+    additionalBlocks:
+      - ACACIA_STAIRS
+      - BIRCH_STAIRS
+      - CRIMSON_STAIRS
+      - DARK_OAK_STAIRS
+      - JUNGLE_STAIRS
+      - SPRUCE_STAIRS
+      - WARPED_STAIRS
     score: 15.0
   OAK_TRAPDOOR:
+    additionalBlocks:
+      - ACACIA_TRAPDOOR
+      - BIRCH_TRAPDOOR
+      - CRIMSON_TRAPDOOR
+      - DARK_OAK_TRAPDOOR
+      - JUNGLE_TRAPDOOR
+      - SPRUCE_TRAPDOOR
+      - WARPED_TRAPDOOR
     score: 30.0
   OAK_WOOD:
     additionalBlocks:
@@ -404,18 +376,14 @@ blocks:
     diminishingReturns: 50
   PACKED_ICE:
     score: 15.0
-  PISTON_BASE:
+  PISTON:
     score: 40.0
-  PISTON_EXTENSION:
+  PISTON_HEAD:
     score: 0.0
-  PISTON_MOVING_PIECE:
+  MOVING_PISTON:
     score: 0.0
-  PISTON_STICKY_BASE:
+  STICKY_PISTON:
     score: 60.0
-  PLAYER_HEAD:
-    additionalBlocks:
-      - PLAYER_WALL_HEAD
-    score: 1000.0
   PODZOL:
     score: 25.0
     diminishingReturns: 10000
@@ -428,9 +396,20 @@ blocks:
   POLISHED_GRANITE:
     score: 15.0
     diminishingReturns: 10000
-  PORTAL:
+  NETHER_PORTAL:
     score: 0.0
-  POTATO:
+  POPPY:
+    additionalBlocks:
+      - WHITE_TULIP
+      - ALLIUM
+      - AZURE_BLUET
+      - BLUE_ORCHID
+      - ORANGE_TULIP
+      - OXEYE_DAISY
+      - PINK_TULIP
+      - RED_TULIP
+    diminishingReturns: 100
+  POTATOES:
     score: 0.0
   POWERED_RAIL:
     score: 20.0
@@ -461,15 +440,11 @@ blocks:
     diminishingReturns: 5000
   REDSTONE_BLOCK:
     score: 150.0
-  REDSTONE_LAMP_OFF:
-    score: 20.0
-  REDSTONE_LAMP_ON:
+  REDSTONE_LAMP:
     score: 20.0
   REDSTONE_WIRE:
     score: 0.0
   RED_MUSHROOM:
-    diminishingReturns: 100
-  RED_ROSE:
     diminishingReturns: 100
   RED_SAND:
     score: 22.5
@@ -496,14 +471,20 @@ blocks:
     score: 50.0
   SKELETON_SKULL:
     additionalBlocks:
+      - PLAYER_HEAD
+      - ZOMBIE_HEAD
+      - CREEPER_HEAD
+      - DRAGON_HEAD
       - SKELETON_WALL_SKULL
+      - ZOMBIE_WALL_HEAD
+      - PLAYER_WALL_HEAD
+      - CREEPER_WALL_HEAD
+      - DRAGON_WALL_HEAD
     score: 1000.0
+    diminishingReturns: 10
   SLIME_BLOCK:
-    score: 250.0
+    score: 50.0
     diminishingReturns: 100
-  SMOOTH_BRICK:
-    score: 12.0
-    diminishingReturns: 20000
   SMOOTH_RED_SANDSTONE:
     score: 25.0
   SMOOTH_RED_SANDSTONE_SLAB:
@@ -528,24 +509,10 @@ blocks:
   SPONGE:
     score: 50.0
     limit: 20
-  SPRUCE_DOOR:
-    score: 20.0
-  SPRUCE_FENCE:
-    score: 17.5
-    diminishingReturns: 5000
-  SPRUCE_FENCE_GATE:
-    score: 40.0
-    diminishingReturns: 100
-  SPRUCE_STAIRS:
-    score: 15.0
-  SPRUCE_TRAPDOOR:
-    score: 30.0
   SPRUCE_WOOD:
     additionalBlocks:
       - STRIPPED_SPRUCE_WOOD
     diminishingReturns: 10000
-  SPRUCE_WOOD_STAIRS:
-    score: 15.0
   STAINED_CLAY:
     score: 50.0
   STONE:
@@ -553,12 +520,19 @@ blocks:
   STONE_BRICK_SLAB:
     score: 7.0
     diminishingReturns: 10000
+  STONE_BRICKS:
+    additionalBlocks:
+      - MOSSY_STONE_BRICKS
+      - CRACKED_STONE_BRICKS
+      - CHISELED_STONE_BRICKS
+    score: 12.0
+    diminishingReturns: 20000
   STONE_PRESSURE_PLATE:
     score: 0.0
   STONE_SLAB:
     score: 5.0
     diminishingReturns: 10000
-  SUGAR_CANE_BLOCK:
+  SUGAR_CANE:
     score: 0.0
   TERRACOTTA:
     additionalBlocks:
@@ -585,15 +559,9 @@ blocks:
     score: 20.0
   VINE:
     limit: 25
-  WARPED_DOOR:
-    score: 20.0
-  WARPED_STAIRS:
-    score: 15.0
-  WARPED_TRAPDOOR:
-    score: 30.0
   WATER:
     score: 0.0
-  WEB:
+  COBWEB:
     score: 20.0
   WET_SPONGE:
     score: 50.0
@@ -652,7 +620,7 @@ blocks:
       - PURPLE_STAINED_GLASS
       - RED_STAINED_GLASS
       - YELLOW_STAINED_GLASS
-    score: 25.0
+    score: 50.0
   WHITE_STAINED_GLASS_PANE:
     additionalBlocks:
       - BLACK_STAINED_GLASS_PANE
@@ -670,7 +638,7 @@ blocks:
       - PURPLE_STAINED_GLASS_PANE
       - RED_STAINED_GLASS_PANE
       - YELLOW_STAINED_GLASS_PANE
-    score: 10.0
+    score: 20.0
   WHITE_WALL_BANNER:
     additionalBlocks:
       - BLACK_WALL_BANNER
@@ -730,11 +698,6 @@ blocks:
   WITHER_SKELETON_SKULL:
     additionalBlocks:
       - WITHER_SKELETON_WALL_SKULL
-    score: 1000.0
-  YELLOW_FLOWER:
-    diminishingReturns: 100
-  ZOMBIE_HEAD:
-    additionalBlocks:
-      - ZOMBIE_WALL_HEAD
-    score: 1000.0
+    score: 500.0
+    limit: 5
 version: 101
